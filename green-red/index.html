@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screen test</title>
+
+    <style>
+        body {
+            height: 1200px;
+            background-color: #0065b3;
+        }
+    </style>
+
+    <script>
+        var colors = [
+            "#0065b3",
+            "#FFFFFF",
+            "#E3E3E3",
+            "#7F7F7F",
+            "#3F3F3F",
+            "#000000",
+            "#FF0000",
+            "#00FF00",
+            "#0000FF",
+        ];
+        var colorInd = 0;
+        function nextBgColor() {
+            colorInd++;
+            if (colorInd >= colors.length)
+            {
+                colorInd = 0;
+            }
+            document.body.style.backgroundColor = colors[colorInd];
+        }
+    </script>
+</head>
+<body onclick="nextBgColor()">
+
+</body>
+</html>
