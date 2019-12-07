@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screen test</title>
+
+    <style>
+        body {
+            height: 1200px;
+            background-color: #000000;
+        }
+    </style>
+
+    <script>
+        var colors = [
+            "#00FF00",
+            "#FF0000",
+        ];
+        var colorInd = 0;
+        function nextBgColor() {
+            colorInd++;
+            if (colorInd >= colors.length)
+            {
+                colorInd = 0;
+            }
+            document.body.style.backgroundColor = colors[colorInd];
+        }
+
+        setInterval(nextBgColor, 250);
+    </script>
+</head>
+<body>
+</body>
+</html>
